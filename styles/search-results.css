@@ -1,0 +1,83 @@
+body::after {
+  content: "";
+  background: #ffffff;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 260px;
+  z-index: -1;
+}
+
+#page-search-results {
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 90%;
+}
+
+#page-search-results header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+#page-search-results header a {
+  align-items: center;
+  color: var(--title-color);
+  display: flex;
+  font-weight: bold;
+}
+
+#page-search-results header a span {
+  background-image: url("../assets/arrow-left.svg");
+  display: flex;
+  height: 24px;
+  margin-right: 16px;
+  width: 20px;
+}
+
+main {
+  margin: 48px;
+}
+
+main h4 {
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  margin-bottom: 32px;
+}
+
+main .cards {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+main .card img {
+  border-radius: 8px 8px 0 0;
+  height: 150px;
+  object-fit: cover;
+  width: 100%;
+}
+
+main .card h1 {
+  color: #322153;
+  font-size: 41px;
+  line-height: 36px;
+  margin-top: 32px;
+}
+
+main .card h3 {
+  color: var(--primary-color);
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  margin: 24px 0;
+}
+
+main .card p {
+  color: #6c6c80;
+  font-size: 16px;
+  line-height: 26px;
+}
